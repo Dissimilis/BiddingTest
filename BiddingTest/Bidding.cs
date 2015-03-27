@@ -132,7 +132,7 @@ namespace BiddingTest
             if (p1 == null)
                 p1 = new List<Campaign<T>>();
 
-            var final = co1.Concat(CountryW).Intersect(ca1.Concat(CategoryW)).Intersect(p1.Concat(PlatformW));
+            var final = co1.Concat(CountryW).Concat(ca1).Concat(CategoryW).Concat(p1).Concat(PlatformW);
 
             return final.ToArray();
         }
