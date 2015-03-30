@@ -36,11 +36,11 @@ namespace BiddingTest
 
 
 
-            for (int i = 0; i < 10000; i++)
+            for (int i = 0; i < 1000000; i++)
             {
                 bidding.LookupByRef(2, 5, 7, -1);
             } 
-            for (int i = 0; i < 10000; i++)
+            for (int i = 0; i < 1000000; i++)
             {
                 bidding.LookupByRef2(2, 5, 7, -1);
             }
